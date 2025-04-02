@@ -5,7 +5,7 @@ At the beginning of the game, the number chosen by the human-player(in the range
 - <a href="https://github.com/Ilaha-Habibova/ZeroSum_NumberGame/blob/main/ZeroSum_NumberGame.py">The complete code</a>
 
 # 🏗️ Implementation:
- _1)_ We built the game in Python using object-oriented programming (OOP) principles. The primary data structure for representing each node in our game tree is the GameState class. Each instance of this class stores:
+ _1)_ The game was built in Python using object-oriented programming (OOP) principles. The primary data structure for representing each node in our game tree is the GameState class. Each instance of this class stores:
 - The current number.
 - The scores of both players (human and computer).
 - The player whose turn it is.
@@ -19,15 +19,15 @@ Additionally, the `GameState` class includes:
 - A heuristic evaluation function (`get_score`), which consists of 2 factors: score difference between human and computer and how close we are to terminal state-1200.
 - A terminal check function (`is_terminal`) that determines if the game has reached the end condition (the number is 1200 or greater).
 
-_2)_ We also implemented a `GameHistory` class to store game results. 
+_2)_ `GameHistory` class  was also implemented to store game results. 
 Each game result is stored as a dictionary, and all results are written to a `game_history.dat` file also, which includes the game result,the initial number,nodes visited,average time per move by the computer,algorithm used,the starting player,timestamp of the game.
 A list of dictionaries is used to store multiple game results efficiently.
 
-_3)_ We used tuples for returning multiple values from functions (e.g., `return best_move, best_score`). Tuples were chosen because:
+_3)_ Tuples are used for returning multiple values from functions (e.g., `return best_move, best_score`). Tuples were chosen because:
 - They are immutable, preventing unintended modifications.
 - They are memory-efficient compared to lists.
 
-_4)_ We used 2 game tree search algorithms for computer move selection:
+_4)_  2 game tree search algorithms were used for computer move selection:
 - Minimax
 - Alpha-beta pruning
 
@@ -60,7 +60,7 @@ Code:
 ![image](https://github.com/user-attachments/assets/2a0917d2-9e98-493f-8a20-f6382db110eb)
 > Explanation:
 > 
-> Definition of Alpha-beta is similar to Minimax function, but we introduce 2 more parameters-_alpha_ (best value for maximizing player) and _beta_( best value for minimizing player). Therefore,the function updates value of alpha to maximum and best score found,while value of beta to minimum and best score found.If beta is less or equal to alpha(same case for alpha and beta cut-off),we don’t explore this branch.
+> Definition of Alpha-beta is similar to Minimax function, but 2 more parameters-_alpha_ (best value for maximizing player) and _beta_( best value for minimizing player) were introduced. Therefore,the function updates value of alpha to maximum and best score found,while value of beta to minimum and best score found.If beta is less or equal to alpha(same case for alpha and beta cut-off),we don’t explore this branch.
 > You can see GameStatistics window,the number of visited nodes for Alpha-beta is significantly lower than Minimax:
 
 ![image](https://github.com/user-attachments/assets/e9bb9614-414b-41af-b7a2-808ef43e117e)
