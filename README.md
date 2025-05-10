@@ -72,9 +72,9 @@ Code:
 <br>
 
 ## © Copyright :
-
-All Rights Reserved.  
-Unauthorized use, reproduction, modification, or distribution of this project, in whole or in part is strictly prohibited. Proper reference must be given if any part of this project is used.  
+Unauthorized use, reproduction, modification, or distribution of this project, in whole or in part is strictly prohibited. <br>
+Proper reference must be given if any part of this project is used:<br> 
+Zero-sum Number Game by Python: Ilaha Habibova - https://github.com/Ilaha-Habibova/ZeroSum_NumberGame
 
 
 
